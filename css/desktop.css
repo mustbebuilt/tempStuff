@@ -36,6 +36,7 @@ header,
 .mainNav {
 	padding: 8px 0;
 	height: auto;
+	display: contents;
 }
 
 .mainNav .row ul {
