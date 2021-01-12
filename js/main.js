@@ -1,9 +1,4 @@
 (function(){
-$(".burgerMenu").on("click", function(ev) {
-  ev.preventDefault();
-  $(this).toggleClass("animateBurger");
-  $(".mainNav").slideToggle("fast");
-});
 $(window).on("resize", function(ev) {
   //console.info(window.innerWidth);
   if (window.innerWidth > 720) {
