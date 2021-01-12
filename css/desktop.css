@@ -5,19 +5,56 @@
 	margin:auto;
 
 	float: left;
-	color: #f2f2f2;
+	
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
 }
-header nav ul li h1{
+
+
+
+header {
 	display:block;
 	padding:0;
 	margin:5px;
 	font-size:1.2rem;
 	color: #DDEAF2;
 }
+.tab {
+	overflow: hidden;
+	border: 1px solid #EDC7B7;
+	background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+	background-color:#EEE2DC;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+	background-color: #BAB2B5;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+	background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 2px solid #BAB2B5;
+	border-top: none;
+  }
 /* use a hand cursor intead of arrow for the action buttons */
 .filepond--file-action-button {
     cursor: pointer;
