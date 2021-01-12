@@ -3,9 +3,13 @@
 	max-width: 1366px;
 	/* 1366x768	16:9*/
 	margin:auto;
-}
-.burgerMenu, .mobH1{
-	display:none;
+
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
 }
 header nav ul li h1{
 	display:block;
@@ -36,7 +40,6 @@ header,
 .mainNav {
 	padding: 8px 0;
 	height: auto;
-	display: contents;
 }
 
 .mainNav .row ul {
