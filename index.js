@@ -4,7 +4,7 @@ var http = require('http'),
     const hostname = '127.0.0.1'
 
 
-fs.readFile('../TherapistHome.html', function (err, html) {
+fs.readFile('TherapistHome.html', function (err, html) {
     if (err) {
         throw err; 
     }       
