@@ -22,9 +22,9 @@ header nav ul li h1{
 .filepond--file-action-button {
     cursor: pointer;
 }
-.filepond--item-panel{
-	stylePanelLayout:circle
-}
+/*.filepond--item-panel{
+	stylePanelLayout:circle;
+}*/
 .filepond--root {
 	max-height: 10em;
 	
