@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
     res.render("index", { title: "CatApp" });
   });
 app.get("/studentinfo", (req, res) => {
-    res.render("studentinfo", { title: "studentinfo", studentProfile: { nickname: "Auth0" } });
+    res.render("studentinfo", { title: "studentinfo", studentProfile: { nickname: "TherapistName" } });
   });  
 
 
