@@ -1,19 +1,11 @@
-var http = require('http'),
-    fs = require('fs');
-    const port = process.env.port || 3000;
-    const hostname = '0.0.0.0'
+const express = require('express')
+const app = express();
+const port = process.env.port || 8000;
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+});
 
-fs.readFile('TherapistHome.html', function (err, html) {
-    if (err) {
-        throw err; 
-    }       
-    http.createServer(function(request, response) {  
-        response.writeHeader(200, {"Content-Type": "text/html"});  
-        response.write(html);  
-        response.end();  
-    }).listen(port, hostname, () => {
-      console.log(`Server running at http://${hostname}:${port}/`);
-    });
-
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}!`)
 });

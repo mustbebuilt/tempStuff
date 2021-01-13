@@ -1,6 +1,4 @@
 {
-
-  
   "name": "catapp",
   "version": "1.0.0",
   "description": "CatApp Web App",
@@ -23,10 +21,8 @@
   "bugs": {
     "url": "https://github.com/b4017553/CatApp/issues"
   },
-  "homepage": "https://github.com/b4017553/CatApp#readme"
-
- 
+  "homepage": "https://github.com/b4017553/CatApp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
-
-
-
