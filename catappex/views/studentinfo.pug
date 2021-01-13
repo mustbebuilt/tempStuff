@@ -3,3 +3,19 @@ block layout-content
     h1.Banner CatApp
     div.Message
       div.Title Student Information
+      html
+  body
+    .tab
+      button.tablinks(onclick="openTab(event, 'Therapy')") Therapy Maps
+      button.tablinks(onclick="openTab(event, 'Recog')")  Recog
+      button.tablinks(onclick="openTab(event, 'Changework')") ChangeWork
+    // Tab content
+    #Therapy.tabcontent
+      h3 Therapy Maps
+      p therapy section.
+    #Recog.tabcontent
+      h3 Recognition
+      p This the recognition and revision section
+    #Changework.tabcontent
+      h3 Changework
+      p Changework section
