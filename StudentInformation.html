@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <scripts src="js/main.js"></script>
     <!-- Viewport here -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mobile First</title>
+    
     <!-- attach styles here -->
     <link rel="stylesheet" href="css/mobile.css" />
     <link
@@ -19,35 +21,29 @@
     fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous"
     />
+    
   </head>
-  <div class="tab">
-      <button class="tablinks" onclick="OpenTab(event, 'Therapy maps')">Therapy Maps</button>
-      <button class="tablinks" onclick="OpenTab(event, 'Self awareness tracker')">Self Awareness Tracker</button>
-      <button class="tablinks" onclick="OpenTab(event, 'Mood Tracker')">Mood Tracker</button>
-      <button class="change-work" onclick="OpenTab(event,'Change Work')">Change-Work</button>
-  </div>
-  <div id="Therapy maps" class="tabcontent">
-      <h3>Welcome to therapy maps</h3>
-      <p>Here you can find what your student has uploaded</p>
-  </div>
-  <div id="Self awareness tracker" class="tabcontent">
-      <h3> Welcome to self awareness tracker</h3>
-      <p>Here you can find the data that your student has uploaded</p>
-  </div>
-  <div>
-      <h3> Mood Tracker</h3>
-      <p> Here you can find what your student has uploaded  </p>
-  </div>
-  <div id="Mood Tracker" class="tabcontent">
-    <h3>Mood Tracker</h3>
-    <p>Here you can find what your student has uploaded</p>
-    <span onclick="this.parentElement.style.display='none'">x</span>
-  </div>
-  <div id= "Change work" class="tabcontent">
-      <h3> Welcome to Change work</h3>
-      <p>Here you can find what your student has uploaded</p>
-  </div>
+  
   <body>
+    <ul class="tabs">
+        <li data-tab-target="#Therapy" class="tab">Therapy Maps</li>
+        <li data-tab-target="#Recog" class="tab">Recognition&revision</li>
+        <li data-tab-target="#Changework" class=" active tab">Changework</li>
+      </ul>
+      <div class="tab-content">
+        <div id="Therapy" data-tab-content >
+          <h1>Therapy Maps</h1>
+          <p>This is the therapy section</p>
+        </div>
+        <div id="Recog" data-tab-content>
+          <h1>Recognition section</h1>
+          <p>Welcome to the recog section</p>
+        </div>
+        <div id="Changework" data-tab-content>
+          <h1>Changework</h1>
+          <p>This is the changework section</p>
+        </div>
+      </div>
   </body>
   <footer>
     <div class="row">
@@ -91,4 +87,8 @@
       </ul>
     </div>
   </footer>
-  </html>
+</div>
+<!-- Javascript links here -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+</html>
