@@ -114,7 +114,7 @@ button[type="submit"] {
     flex: 1;
 }
 
-.loginLinks {
+.logoutLink {
     /* Don't set flex-basis as wrap will overrule it just stop grow and shrink */
     flex: 0;
 }
@@ -128,19 +128,19 @@ button[type="submit"] {
     flex-basis: 100%;
 }
 
-.loginLinks > ul {
+.logoutLink > ul {
     list-style: none;
     padding-left: 0;
     display: flex;
     justify-content: flex-end;
 }
-.loginLinks > ul > li {
+.logoutLink > ul > li {
     border: 1px solid #000;
 }
-.loginLinks > ul > li:first-child {
+.logoutLink > ul > li:first-child {
     margin-right: 4px;
 }
-.loginLinks > ul > li > a {
+.logoutLink > ul > li > a {
     padding: 4px 2px;
     color: #000;
     text-decoration: none;
