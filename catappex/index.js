@@ -34,6 +34,9 @@ app.get("/", (req, res) => {
 app.get("/studentinfo", (req, res) => {
     res.render("studentinfo", { title: "studentinfo", studentProfile: { nickname: "TherapistName" } });
   });  
+app.get("/filepond", (req, res) => {
+    res.render("filepond", { title: "filepond", filepondProfile: { nickname: "Filepond!" } });
+  });
 
 
 /**
