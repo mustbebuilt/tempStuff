@@ -1,21 +1,15 @@
 extends layout
 block layout-content
-<<<<<<< HEAD
-  div.View.studentInfo
-    h1.Banner CatApp
-=======
   div.View.StudentInfoView
     h1.Banner Hello #{studentProfile.nickname}!
->>>>>>> a4aa2158651b7e9ec91b6966f3afc652c4872a18
     div.Message
       div.Title Student Information
     head
-      html
-    body
-    .tab
-      button.tablinks(onclick="openTab(event, 'Therapy')") Therapy Maps
-      button.tablinks(onclick="openTab(event, 'Recog')")  Recog
-      button.tablinks(onclick="openTab(event, 'Changework')") ChangeWork
+     body
+      .tab
+        button.tablinks(onclick="openTab(event, 'Therapy')") Therapy Maps
+        button.tablinks(onclick="openTab(event, 'Recog')")  Recog
+        button.tablinks(onclick="openTab(event, 'Changework')") ChangeWork
       // Tab content
       #Therapy.tabcontent
         h3 Therapy Maps
