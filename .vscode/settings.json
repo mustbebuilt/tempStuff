@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/d6284c68-b57f-4c90-8db6-d02ccd493475/resourceGroups/CatAppWeb-rg/providers/Microsoft.Web/sites/CatApp",
+    "appService.deploySubpath": "."
+}
