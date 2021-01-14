@@ -6,7 +6,6 @@ block layout-content
     div.Message
       div.Title filepond
       doctype html
-html
   head
     meta(charset="UTF-8")
     <!--meta(name="viewport" content="width=device-width, initial-scale=0.5")
@@ -14,10 +13,6 @@ html
     
   body
     input(type="file" multiple="")
-    script(src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js")
-    script(src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js")
-    script(src="https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.js")
-    script(src="https://unpkg.com/filepond/dist/filepond.js")
     script.
       FilePond.registerPlugin(
       FilePondPluginImagePreview,
