@@ -32,5 +32,5 @@ jobs:
       with:
         app-name: 'eekamouse'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_1c7ddc28271f44bbb3989b30eb90f0cc }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_bf1fed60dc7b4e84bf03db281697e563 }}
         package: .
