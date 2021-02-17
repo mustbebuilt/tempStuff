@@ -3,4 +3,5 @@ block layout-content
     h1= title
     ul
       each film in films
-        li=film.filmName
+        li 
+          a(href=`viewOne/${film._id}`)=film.filmName

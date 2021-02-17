@@ -20,6 +20,10 @@ module.exports = (app) => {
     myControllers.viewAll(app, req, res);
   });
 
+  router.get("/viewOne/:ID", (req, res) => {
+      myControllers.viewOne(app, req, res);
+  });
+
   router.get("/api/viewAll", (req, res) => {
     myControllers.viewAllJSON(app, req, res);
   });

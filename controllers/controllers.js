@@ -49,7 +49,27 @@ module.exports = {
         }
         res.json(docs);
       });
-  }
+  },
+  viewOne: function (app, req, res) {
+    console.info("Get Item controller");
+    let ID = req.params.ID;
+    var o_id = new ObjectId(ID);
+
+    app
+      .set("myDb")
+      .collection("filmsCollection")
+      .find({ _id: o_id })
+      .toArray(function (err, docs) {
+        if (err) {
+          console.error(err);
+        }
+        console.dir(docs);
+        return res.render("viewOne", {
+          title: `${docs[0].filmName}`,
+          film: docs[0]
+        });
+      });
+  },
 
   
 };
